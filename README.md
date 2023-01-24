@@ -24,10 +24,12 @@ Openbooks allows you to download ebooks from irc.irchighway.net quickly and easi
 
 ### Docker
 
+Replace `some_username` with your own below.
+
 - Basic config
-  - `docker run -p 8080:80 evanbuss/openbooks`
+  - `docker run -p 8080:80 evanbuss/openbooks --name some_username`
 - Config to persist all eBook files to disk
-  - `docker run -p 8080:80 -v /home/evan/Downloads/openbooks:/books evanbuss/openbooks --persist`
+  - `docker run -p 8080:80 -v /home/evan/Downloads/openbooks:/books evanbuss/openbooks --persist --name some_username`
 
 ### Setting the Base Path
 
